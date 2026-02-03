@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="he" dir="ltr"> <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Weekend 🗺️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card map-page">
+    <h1 class="map-title">OUR WEEKEND 🗺️💘</h1>
+    <p class="subtitle">Click the icons to reveal secrets...</p>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-row" style="margin-bottom: 10px;">
+        <div class="col-side left-side"></div>
+        <div class="col-center">
+          <div class="start-label">START POINT</div>
+        </div>
+        <div class="col-side right-side"></div>
+      </div>
+
+     <div class="timeline-row">
+        <div class="col-side left-side">
+          <div class="note-box" id="note1">
+            <p>
+                🍳☕ פותחים את בוקר שישי בארוחת בוקר טוב וארגונים אחרונים<br>
+                ⛽ תדלוק מהיר<br>
+                🛒 קפיצה לסופר אם שכחנו משהו<br>
+                😎 ויצאנו לדרך
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-center">
+          <button class="icon-btn" onclick="toggleNote('note1')">🏠</button>
+        </div>
+
+        <div class="col-side right-side"></div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="col-side left-side">
+          <div class="photo-frame">
+            <img src="images/jacobs.jpg" alt="Jacob Hotel" onerror="this.style.display='none'">
+          </div>
+        </div>
+        
+        <div class="col-center">
+          <button class="icon-btn" onclick="toggleNote('note2')">🏨</button>
+        </div>
+
+        <div class="col-side right-side">
+          <div class="note-box" id="note2">
+            <h3>Jacob’s Hotel</h3>
+            <p>
+                 🌊 הגעה למלון, צ'ק אין מהיר וקבלת חדר עם נוף לכנרת <br>
+                 🕚 צ'ק אין: 15:00 ולא דקה אחרי <br>
+                 😉 יש עוד יום ארוך 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="col-side left-side">
+          <div class="note-box" id="note3">
+            <h3>Hamat Gader</h3>
+            <p>
+               ♨️ נסיעה קצרה לחמת גדר - גן עדן חמים <br>
+               🌙 נרבוץ שם יום שלם עד שעות הלילה 
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-center">
+          <button class="icon-btn" onclick="toggleNote('note3')">♨️</button>
+        </div>
+
+        <div class="col-side right-side">
+          <div class="photo-frame">
+            <img src="images/hamatgader.jpg" alt="Hamat Gader" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="col-side left-side">
+          <div class="photo-frame">
+            <img src="images/alhanahar.jpg" alt="Restaurant" onerror="this.style.display='none'">
+          </div>
+        </div>
+        
+        <div class="col-center">
+          <button class="icon-btn" onclick="toggleNote('note4')">🍽️</button>
+        </div>
+
+        <div class="col-side right-side">
+          <div class="note-box" id="note4">
+            <h3>Al HaNahar</h3>
+            <p>
+               🕯️ ארוחת ערב רומנטית ליד נהר הירדן <br>
+                שעת השולחן: 21:45<br>
+               ✨ עם נוף קסום וטעים במיוחד <br>
+               👣 ואפילו מרחק הליכה קצר מהמלון 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="col-side left-side">
+          <div class="note-box" id="note5">
+            <h3>The Grand Finale</h3>
+            <p>
+               🌕 חזרה לחדר שלנו לאור ירח <br>
+               🍷 וסיום היום עם בקבוק יין טוב <br>
+               🧀 ופלטת גבינות מפנקת 
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-center">
+          <button class="icon-btn" onclick="toggleNote('note5')">🛏️</button>
+        </div>
+
+        <div class="col-side right-side">
+          <div class="photo-frame">
+            <img src="images/room.jpg" alt="Room" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-row" style="margin-top: 60px; margin-bottom: 20px;">
+        <div class="col-side left-side"></div>
+        <div class="col-center">
+          <div class="start-label">NEXT DAY ☀️</div>
+        </div>
+        <div class="col-side right-side"></div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="col-side left-side">
+          <div class="photo-frame">
+            <img src="images/breakfast.jpg" alt="Breakfast" onerror="this.style.display='none'">
+          </div>
+        </div>
+        
+        <div class="col-center">
+          <button class="icon-btn" onclick="toggleNote('note6')">🥐</button>
+        </div>
+
+        <div class="col-side right-side">
+          <div class="note-box" id="note6">
+            <h3>Morning Treat</h3>
+            <p>
+               🥐 ארוחת בוקר מפנקת מטעם המלון <br>
+               🌊 לנוף מדהים של הכנרת 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="col-side left-side">
+          <div class="note-box" id="note7">
+            <h3>Canoeing</h3>
+            <p>
+               🛶 קפיצה בדרך לשייט קאנו אינדיאני <br>
+               🌿 בכפר אינדיאני על נהר הירדן 
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-center">
+          <button class="icon-btn" onclick="toggleNote('note7')">🛶</button>
+        </div>
+
+        <div class="col-side right-side">
+          <div class="photo-frame">
+            <img src="images/canoe.jpg" alt="Canoe" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+
+    <div class="timeline-row">
+        <div class="col-side left-side">
+          <div class="note-box" id="note8">
+            <h3>Back Home</h3>
+            <p>
+               🚗 ונסיעה הביתה אחרי יומיים מהנים <br>
+               ☀️ אפשר גם לקפוץ לטיול צהריים בדרך הביתה 
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-center">
+          <button class="icon-btn" onclick="toggleNote('note8')">🚗</button>
+        </div>
+
+        <div class="col-side right-side"></div>
+      </div>
+
+    </div>
+
+    <div class="map-footer" style="margin-top: 50px;">
+      <button class="btn yes" onclick="window.location.href='index.html'">Back ↩</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
